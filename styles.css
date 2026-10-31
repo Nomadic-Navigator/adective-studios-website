@@ -187,22 +187,30 @@ body{background:var(--paper);background-image:radial-gradient(rgba(75,43,29,.045
   .site-footer nav a { font-size: 8px; }
 }
 /* Landscape portfolio films */
-.landscape-showcase{padding:74px 0 58px;background:#f8f1e8}.landscape-showcase .reel-heading h2{font:700 clamp(38px,4.7vw,58px)/.96 var(--display);letter-spacing:-.07em}.landscape-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.landscape-card{min-width:0}.landscape-frame{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:4px 28px 4px 4px;background:#351b18;box-shadow:0 12px 28px #3b21151a}.landscape-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#351b18}.landscape-chip{position:absolute;top:14px;left:14px;padding:8px 11px;border:1px solid #fff8;border-radius:99px;background:#f8f1e8e8;color:#351b18;font:700 9px var(--sans);letter-spacing:.12em;pointer-events:none}.landscape-card .reel-meta{padding-top:13px}.landscape-card .reel-meta b{font-size:14px}.landscape-card .reel-meta small{font-size:10px}@media(max-width:700px){.landscape-showcase{padding:46px 0 38px}.landscape-grid{grid-template-columns:1fr;gap:20px}.landscape-showcase .reel-heading{display:block}.landscape-showcase .reel-heading>p{margin-top:13px}.landscape-chip{top:9px;left:9px;padding:7px 9px;font-size:8px
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    .brand-logo {
-  background-image: none;
-  mix-blend-mode: normal;
-  object-fit: contain;
-  .site-header .brand-logo {
-  width: 150px;
-  height: 55px;
-  object-fit: contain;
-  display: block;
+.landscape-showcase{padding:74px 0 58px;background:#f8f1e8}
+.landscape-showcase .reel-heading h2{font:700 clamp(38px,4.7vw,58px)/.96 var(--display);letter-spacing:-.07em}
+.landscape-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.landscape-card{min-width:0}
+.landscape-frame{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:4px 28px 4px 4px;background:#351b18;box-shadow:0 12px 28px #3b21151a}
+.landscape-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#351b18}
+.landscape-chip{position:absolute;top:14px;left:14px;padding:8px 11px;border:1px solid #fff8;border-radius:99px;background:#f8f1e8e8;color:#351b18;font:700 9px var(--sans);letter-spacing:.12em;pointer-events:none}
+.landscape-card .reel-meta{padding-top:13px}
+.landscape-card .reel-meta b{font-size:14px}
+@media(max-width:700px){
+  .landscape-showcase{padding:46px 0 38px}
+  .landscape-grid{grid-template-columns:1fr;gap:20px}
+  .landscape-showcase .reel-heading{display:block}
+  .landscape-showcase .reel-heading>p{margin-top:13px}
+  .landscape-chip{top:9px;left:9px;padding:7px 9px;font-size:8px}
 }
-
-@media (max-width: 700px) {
-  .site-header .brand-logo {
-    width: 130px;
-    height: 48px;
-  }
+/* Fit the transparent agency logo cleanly in the header and footer. */
+.brand-logo{background-image:none;mix-blend-mode:normal;object-fit:contain}
+.site-header .brand-logo{width:160px;height:58px}
+.site-footer .brand-logo{width:140px;height:54px}
+@media(max-width:700px){
+  .site-header .brand-logo{width:clamp(108px,36vw,145px);height:50px}
+  .site-footer .brand-logo{width:clamp(105px,35vw,132px);height:48px}
 }
+@media(max-width:390px){
+  .site-header .brand-logo{width:108px;height:42px}
 }
