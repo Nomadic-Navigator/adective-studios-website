@@ -201,7 +201,7 @@ body{background:var(--paper);background-image:radial-gradient(rgba(75,43,29,.045
 
 @media (max-width: 700px) {
   .site-header .brand-logo {
-    width: 142px;
+    width: 152px;
     height: 52px;
   }
 }
